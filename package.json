@@ -4,7 +4,7 @@
   "scripts": {
     "start": "webpack-dev-server --inline --hot --progress --port 4000",
     "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
-    "postinstall": "typings install",
+    "postinstall": "./node_modules/typings/dist/bin.js install",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "typings": "typings"
