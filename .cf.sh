@@ -6,6 +6,7 @@ wget -O - https://cli.run.pivotal.io/stable\?release\=linux64-binary\&source\=gi
 if [ $1 = "userstat" ]
     then
     ./cf login -a https://api.cf.us10.hana.ondemand.com -u $CF_USER -p $CF_PASS
+    ./cf target -o userstats -s dev
 fi
 
 echo $1
