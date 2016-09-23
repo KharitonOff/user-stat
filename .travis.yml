@@ -3,5 +3,6 @@ install:
 - npm install -g typings
 - npm install
 - typings install
+- npm run build
 after_script:
 - sh ./.cf.sh userstat
