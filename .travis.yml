@@ -1,6 +1,7 @@
 language: node_js
 install:
 - npm install -g typings
+- npm install -g webpack
 - npm install
 - typings install
 - npm run build
