@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "webpack-dev-server --inline --hot --progress --port 4000",
-    "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail && node app.js",
+    "build": "rm -rf dist && webpack --config config/webpack.prod.js --progress --profile --bail && node app.js",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "typings": "typings"
