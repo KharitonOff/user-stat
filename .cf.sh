@@ -10,4 +10,4 @@ fi
 
 echo $1
 
-./cf push $1 -c "node app.js" --no-manifest
+./cf push $1 -c "npm run build" --no-manifest
